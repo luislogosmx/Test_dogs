@@ -6,7 +6,7 @@
 describe('App', () => {
     it('should have Pets header', () => {
       // Start from the index page
-      cy.visit('http://localhost:3000/')
+      cy.visit('http://localhost:8080/')
   
       // check the h1 tag to contain shelter
       cy.get('h1').contains('Adoption shelter')
@@ -14,7 +14,7 @@ describe('App', () => {
 
     it('should display todays day', () => {
       // start from the index page
-      cy.visit('http://localhost:3000/')
+      cy.visit('http://localhost:8080/')
 
       // get today's long day name
       const today = new Date().toLocaleDateString('en-US', { weekday: 'long' })

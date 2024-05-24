@@ -5,7 +5,7 @@
     "build": "next build",
     "start": "next start",
     "cypress:headless": "cypress run",
-    "test": "start-server-and-test start http://localhost:3000 cypress:headless"
+    "test": "start-server-and-test start http://localhost:8080 cypress:headless"
   },
   "dependencies": {
     "mongodb": "^4.8.1",
